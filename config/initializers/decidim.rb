@@ -8,6 +8,9 @@ Decidim.configure do |config|
   config.default_locale = :de
   config.available_locales = [:de, :en, :fr]
 
+  # Load locales in nested dictionaries under config/locales
+  config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+
   # Geocoder configuration
   # config.geocoder = {
   #   static_map_url: "https://image.maps.cit.api.here.com/mia/1.6/mapview",
