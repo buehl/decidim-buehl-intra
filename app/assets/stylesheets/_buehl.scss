@@ -1,0 +1,155 @@
+$blue: #005CA9;
+$alt_blue: #5288db;
+$dark_grey: #3d393c;
+$light_grey: #f4f4f4;
+$white: #ffffff;
+
+.title-bar{
+   background: $blue;
+}
+
+.logo-cityhall img{
+   margin-right: 20px;
+}
+
+@media screen and (max-width: 39.9375em){
+   .title-bar {
+      border: unset;
+   }
+}
+
+.logo-wrapper img {
+      padding-right: 20px;
+   }
+
+.topbar__search{
+   input::placeholder,
+   svg{
+      color: $dark_grey;
+      opacity: .5;
+   }
+   input,
+   input:focus{
+      background: $light_grey;
+      color: $dark_grey;
+   }
+}
+
+.navbar{
+   background: $alt_blue;
+}
+
+.main-nav__link a{
+   color: $white;
+   font-weight: 600;
+}
+
+.main-nav__link a:hover{
+   background: rgba(255,255,255,0.1);
+}
+
+@media print, screen and (min-width: 40em){
+   .main-nav__link--active a{
+      box-shadow: inset 0 -3px 0 0 var(--primary);
+   }
+}
+
+.text-highlight.heading1{
+   font-weight: 700;
+   white-space: nowrap;
+}
+
+.topbar__user__login{
+   white-space: nowrap;
+}
+
+a,
+a.card__link,
+.card__link,
+.card__link:hover,
+.author-data .author__name,
+.link,
+.floating-helper__text,
+.topbar__dropmenu .is-dropdown-submenu li a,
+#profile-tabs.tabs .tabs-title a,
+.process_stats .process_stats-item .icon,
+.side-panel__tabs .tabs-title.is-active>[role=tab], .side-panel__tabs .tabs-title.is-active>a,
+.side-panel__tabs .tabs-title>[role=tab]:hover, .side-panel__tabs .tabs-title>a:hover {
+   color: $blue;
+}
+
+a:hover,
+a.card__link:hover,
+a:hover .author__name{
+   color: $alt_blue;
+}
+
+.topbar__dropmenu .dropdown>li>a:hover,
+.topbar__dropmenu .dropdown>li>a:focus,
+.dropdown.menu .is-active>a,
+.topbar__user__login a:hover{
+   color: unset;
+}
+
+.button.secondary{
+   background-color: $blue;
+}
+
+.floating-helper__content,
+.floating-helper__text{
+   border-top-color: $blue;
+   background-color: rgba(82,136,219,0.1);
+}
+
+.floating-helper__icon,
+.floating-helper__content-close{
+   background-color: $blue;
+}
+
+.button.hollow:hover,
+.button.hollow:focus, 
+.button.secondary:hover,
+.button.secondary:focus,
+.button.hollow.secondary:hover,
+.button.hollow.secondary:focus{
+   border-color: $blue;
+   color: $blue;
+   background-color: transparent;
+}
+
+.button.secondary:hover,
+.button.secondary:focus{
+   background-color: $blue;
+}
+
+.main-footer a,
+.mini-footer a{
+   color: $white;
+}
+
+.main-footer__badge{
+   margin-left: 40px;
+}
+
+.topbar__dropmenu .is-dropdown-submenu{
+   z-index: 701;
+}
+
+.section-heading.section-heading:before{
+    background: image-url(buehl/icon.svg) no-repeat center;
+    background-size: contain;
+    width: .9rem;
+    height: .9rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0rem;
+}
+
+.process-header__main{
+    background-size: contain;
+    filter: blur(3px);
+}
+
+:root{
+   --primary: #{$blue};
+   --secondary: #{$blue};
+}
