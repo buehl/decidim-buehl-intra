@@ -2,7 +2,7 @@
 
 Decidim.configure do |config|
   config.application_name = "mein.buehl.intra"
-  config.mailer_sender = "decidim@buehl.de"
+  config.mailer_sender = "decidim@buehl.intra"
 
   # Change these lines to set your preferred locales
   config.default_locale = :de
