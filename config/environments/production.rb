@@ -1,4 +1,8 @@
 Rails.application.configure do
+  
+  # Secure production environment with a password until all requirements are met
+  config.middleware.use RackPassword::Block, auth_codes: Rails.application.secrets.staging_password
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
