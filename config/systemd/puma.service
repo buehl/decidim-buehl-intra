@@ -1,0 +1,24 @@
+[Unit]
+Description=Puma HTTP Server
+After=syslog.target network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/decidim/decidim-buehl-intra
+
+ExecStart=/bin/bash -lc '/home/decidim/.rbenv/shims/bundle exec puma -e production -C config/puma.rb'
+ExecReload=/bin/kill -s USR1 $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+
+User=decidim
+Group=decidim
+
+Environment=RAILS_ENV=production
+
+Restart=always
+
+# This will default to "bundler" if we don't specify it
+SyslogIdentifier=puma
+
+[Install]
+WantedBy=multi-user.target

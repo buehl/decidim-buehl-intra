@@ -1,0 +1,9 @@
+:concurrency: 5
+:queues:
+  - default
+  - mailers
+  - newsletter
+  - newsletter_opt_in
+  - decidim_events
+  - events
+  - metrics

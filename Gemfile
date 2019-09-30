@@ -33,7 +33,6 @@ group :development do
 end
 
 group :production do
-  gem "passenger"
-  gem "delayed_job_active_record"
+  gem "sidekiq"
   gem "daemons"
 end

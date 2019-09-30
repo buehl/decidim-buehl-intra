@@ -1,0 +1,24 @@
+[Unit]
+Description=sidekiq
+After=syslog.target network.target redis-server.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/decidim/decidim-buehl-intra
+
+ExecStart=/bin/bash -lc '/home/decidim/.rbenv/shims/bundle exec sidekiq -e production -C config/sidekiq.yml'
+
+User=decidim
+Group=decidim
+
+# Greatly reduce Ruby memory fragmentation and heap usage
+# https://www.mikeperham.com/2018/04/25/taming-rails-memory-bloat/
+Environment=MALLOC_ARENA_MAX=2
+
+Restart=always
+
+# This will default to "bundler" if we don't specify it
+SyslogIdentifier=sidekiq
+
+[Install]
+WantedBy=multi-user.target
