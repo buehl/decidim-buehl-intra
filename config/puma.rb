@@ -1,25 +1,21 @@
-# Change to match your CPU core count
-workers 2
-
-# Min and Max threads per worker
-threads 1, 6
-
-app_dir = File.expand_path("../..", __FILE__)
-directory app_dir
-shared_dir = "#{app_dir}/tmp"
+workers Integer(ENV['WEB_CONCURRENCY'] || 2)
+threads_count = Integer(ENV['RAILS_MAX_THREADS'] || 5)
+threads threads_count, threads_count
 
 # Default to production
-rails_env = ENV['RAILS_ENV'] || "production"
-environment rails_env
+environment ENV['RAILS_ENV'] || "production"
 
 # Set master PID and state locations
-pidfile "#{shared_dir}/pids/puma.pid"
-state_path "#{shared_dir}/pids/puma.state"
+app_dir = File.expand_path("../..", __FILE__)
+directory app_dir
+tmp_dir = "#{app_dir}/tmp"
+pidfile "#{tmp_dir}/pids/puma.pid"
+state_path "#{tmp_dir}/pids/puma.state"
 
 preload_app!
 
 # Set up socket location
-bind "unix://#{shared_dir}/sockets/puma.sock"
+bind "unix://#{tmp_dir}/sockets/puma.sock"
 
 on_worker_boot do
   ActiveRecord::Base.establish_connection
