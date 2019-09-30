@@ -8,16 +8,20 @@ gem "decidim", "0.18.0"
 # gem "decidim-consultations", "0.18.0"
 # gem "decidim-initiatives", "0.18.0"
 
-gem "bootsnap", "~> 1.3"
-
 gem "ransack", "~> 2.1.1"
 
-gem "puma", "~> 3.0"
-gem "uglifier", "~> 4.1"
-
-gem "faker", "~> 1.9"
-
+gem "bootsnap"
+gem "uglifier"
+gem "lograge"
+gem "faker"
+gem "deface"
+gem "progressbar"
+gem "puma"
+gem "origami"
 gem "figaro"
+
+# Secure decidim with a password until all requirements are met
+gem "rack_password"
 
 group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri
