@@ -136,12 +136,21 @@ a:hover .author__name{
 }
 
 .section-heading.section-heading:before{
-    background: image-url("buehl/icon.svg") no-repeat center;
-    background-size: contain;
-    width: .9rem;
-    height: .9rem;
-    margin-right: 0.5rem;
-    margin-bottom: 0rem;
+   background: image-url("buehl/icon.svg") no-repeat center;
+   background-size: contain;
+   width: .9rem;
+   height: .9rem;
+   margin-right: 0.5rem;
+   margin-bottom: 0rem;
+}
+
+@media print, screen and (min-width: 64em)
+.hero__container {
+   padding: 6.5rem 0;
+}
+
+.hero::after{
+   background-color: unset; 
 }
 
 .process-header__main{
