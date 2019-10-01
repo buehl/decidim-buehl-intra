@@ -38,5 +38,6 @@ end
 
 group :production do
   gem "sidekiq"
+  gem "whenever"
   gem "daemons"
 end
