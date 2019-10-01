@@ -21,7 +21,7 @@ gem "origami"
 gem "figaro"
 
 # Secure decidim with a password until all requirements are met
-gem "rack_password"
+gem "lockup"
 
 group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri

@@ -1,19 +1,23 @@
 [Unit]
 Description=Puma HTTP Server
-After=syslog.target network.target
+After=network.target
 
 [Service]
 Type=simple
+
+# Specify the path to your puma application root
 WorkingDirectory=/home/decidim/decidim-buehl-intra
 
-ExecStart=/bin/bash -lc '/home/decidim/.rbenv/shims/bundle exec puma -e production -C config/puma.rb'
-ExecReload=/bin/kill -s USR1 $MAINPID
-ExecStop=/bin/kill -s QUIT $MAINPID
-
+# Preferably configure a non-privileged user
 User=decidim
 Group=decidim
 
 Environment=RAILS_ENV=production
+
+# The command to start Puma, use 'which puma' to get puma's bin path, specify your config/puma.rb file
+ExecStart=/bin/bash -lc '/home/decidim/.rbenv/shims/bundle exec puma -e production -C config/puma.rb'
+ExecReload=/bin/kill -s USR1 $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
 
 Restart=always
 
