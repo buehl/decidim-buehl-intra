@@ -145,8 +145,11 @@ a:hover .author__name{
 }
 
 .process-header__main{
-    background-size: contain;
-    filter: blur(3px);
+   background-color: #fab71c;
+}
+
+.process-header__main::after{
+   background-color: unset;
 }
 
 :root{
