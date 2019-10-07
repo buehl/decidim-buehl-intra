@@ -23,6 +23,8 @@ gem "figaro"
 # Secure decidim with a password until all requirements are met
 gem "lockup"
 
+gem "gitlab_omniauth-ldap"
+
 group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri
   gem "decidim-dev", "0.18.0"
