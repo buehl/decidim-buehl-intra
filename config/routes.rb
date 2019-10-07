@@ -12,5 +12,6 @@ Rails.application.routes.draw do
 
   authenticate :user, ->(u) { u.admin? } do
     mount Sidekiq::Web => "/sidekiq"
+    mount RailsAdmin::Engine => '/db', as: 'rails_admin'
   end
 end

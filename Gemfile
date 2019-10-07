@@ -23,6 +23,9 @@ gem "figaro"
 # Secure decidim with a password until all requirements are met
 gem "lockup"
 
+gem "rails_admin"
+gem "rails_admin-i18n"
+
 gem "gitlab_omniauth-ldap"
 gem "omniauth-rails_csrf_protection"
 
