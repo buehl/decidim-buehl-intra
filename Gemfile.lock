@@ -813,7 +813,6 @@ DEPENDENCIES
   listen (~> 3.1.0)
   lockup
   lograge
-  omniauth-rails_csrf_protection
   origami
   progressbar
   puma

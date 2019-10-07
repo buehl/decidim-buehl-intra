@@ -28,7 +28,6 @@ gem "rails_admin"
 gem "rails_admin-i18n"
 
 gem "gitlab_omniauth-ldap"
-gem "omniauth-rails_csrf_protection"
 
 group :development, :test do
   gem "byebug", platform: :mri
