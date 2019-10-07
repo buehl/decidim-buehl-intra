@@ -24,6 +24,7 @@ gem "figaro"
 gem "lockup"
 
 gem "gitlab_omniauth-ldap"
+gem "omniauth-rails_csrf_protection"
 
 group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri
