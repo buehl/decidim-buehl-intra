@@ -293,7 +293,7 @@ de:
           proposals: Vorschläge
     participatory_spaces:
       highlighted_proposals:
-        see_all: See all (%{count})
+        see_all: Alle anzeigen (%{count})
     proposals:
       actions:
         answer: Antworten
@@ -648,10 +648,10 @@ de:
           amendment_type: Art
           category: Kategorie
           category_prompt: Wählen Sie eine Kategorie
-          origin: Ursprung
+          origin: Wer sagt's?
           related_to: Bezüglich
           search: Suche
-          state: Zustand
+          state: Wie steht's?
           voted: Gewählt
         filters_small_view:
           close_modal: Modal schließen

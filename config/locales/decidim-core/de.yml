@@ -388,7 +388,7 @@ de:
         new:
           are_you_new?: Neu auf der Plattform?
           register: Konto erstellen
-          sign_in_disabled: Sie können mit einem externen Konto darauf zugreifen
+          sign_in_disabled: Nutze eines der folgenden externen Konten, um dich einzuloggen
           sign_up_disabled: Die Anmeldung ist deaktiviert. Sie können einen vorhandenen Benutzer für den Zugriff verwenden
       shared:
         newsletter_modal:
@@ -858,13 +858,13 @@ de:
       home:
         extended:
           debates: Diskussionen
-          debates_explanation: Teilen Sie Ihre Ansichten und bereichern Sie die aus Ihrer Sicht relevanten Themen.
+          debates_explanation: Bring dich ein und teile deine Ansichten zum digitalen Wandel.
           how_to_participate: Wie nehme ich an einem Prozess teil?
-          meetings: Meetings
-          meetings_explanation: Finden Sie heraus, wo und wann Sie an öffentlichen Veranstaltungen teilnehmen können.
-          more_info: Mehr Info
-          proposals: Vorschläge
-          proposals_explanation: Machen Sie Vorschläge, unterstützen Sie bestehende und fördern Sie die Änderungen, die Sie sehen möchten.
+          meetings: Gespräche & Workshops
+          meetings_explanation: Finde heraus, wo und wann Veranstaltungen zum Thema Digitalisierung stattfinden.
+          more_info: Mehr Informationen
+          proposals: Ideen
+          proposals_explanation: Bereichere die Digitalisierungsstrategie mit den aus deiner Sicht relevanten Themen.
         footer_sub_hero:
           footer_sub_hero_body: Lasst uns eine offenere, transparentere und kollaborativere Gesellschaft aufbauen.<br /> Beitreten, teilnehmen und entscheiden.
           footer_sub_hero_headline: Willkommen auf der Beteiligungsplattform %{organization}.
@@ -1038,7 +1038,7 @@ de:
         label: 'Ergebnisse pro Seite:'
       share_modal:
         close_window: Fenster schließen
-        share: Aktie
+        share: Teilen
         share_link: Einen Link teilen
       version_author:
         deleted: Gelöschter Benutzer
@@ -1145,8 +1145,8 @@ de:
         message: Ihr Konto wurde aufgrund einer übermäßigen Anzahl fehlgeschlagener Anmeldeversuche gesperrt.
         subject: Entsperren Anweisungen
     omniauth_callbacks:
-      failure: Konnte dich nicht von %{kind} wegen "%{reason}" authentifizieren.
-      success: Erfolgreich von %{kind} account authentifiziert.
+      failure: 'Sie konnten nicht mit Ihrem %{kind}-Account angemeldet werden. Grund: "%{reason}".'
+      success: Sie haben sich erfolgreich mit Ihrem %{kind}-Account angemeldet.
     passwords:
       edit:
         change_my_password: Ändere mein Passwort
@@ -1194,7 +1194,7 @@ de:
         didn_t_receive_unlock_instructions: Haben Sie keine Entsperrungsanweisungen erhalten?
         forgot_your_password: Haben Sie Ihr Passwort vergessen?
         sign_in: Einloggen
-        sign_in_with_provider: Melde dich mit %{provider}
+        sign_in_with_provider: Stadtverwaltung Bühl
         sign_up: Registrieren
       minimum_password_length:
         one: "(%{count} Zeichen Minimum)"
@@ -1237,11 +1237,11 @@ de:
       cookie_warning:
         description_html: Diese Seite verwendet Cookies. Indem Sie die Seite weiter durchsuchen, stimmen Sie der Verwendung von Cookies zu. Erfahren Sie mehr darüber %{link}.
         link_label: Hier
-        ok: ich stimme zu
+        ok: Ich stimme zu
       edit_link:
         edit: Bearbeiten
       footer:
-        download_open_data: Laden Sie Open Data-Dateien herunter
+        download_open_data: Open-Data Dateien herunterladen
         made_with_open_source: Website mit <a target="_blank" href="https://github.com/decidim/decidim">freier Software erstellt</a>.
       header:
         close_menu: Menü schließen
