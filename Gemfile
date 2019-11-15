@@ -4,9 +4,10 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "master" }
+# Uncomment this in order to install from master branch
+#DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", branch: "master" }
 
-gem "decidim", DECIDIM_VERSION
+gem "decidim", "0.19.0"
 # gem "decidim-consultations", "0.18.0"
 # gem "decidim-initiatives", "0.18.0"
 
@@ -31,7 +32,7 @@ gem "gitlab_omniauth-ldap"
 
 group :development, :test do
   gem "byebug", platform: :mri
-  gem "decidim-dev", DECIDIM_VERSION
+  gem "decidim-dev", "0.19.0"
   gem "rspec-rails"
 end
 
