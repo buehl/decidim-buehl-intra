@@ -60,11 +60,11 @@ de:
       image_too_big: Das Bild ist zu groß
   date:
     formats:
-      decidim_short: "%d/%m/%Y"
-      decidim_short_with_month_name_short: "%d %b %Y"
-      decidim_with_day_and_month_name: "%A %d %b %Y"
-      decidim_with_month_name: "%d %B %Y"
-      decidim_with_month_name_short: "%d %b"
+      decidim_short: "%d.%m.%Y"
+      decidim_short_with_month_name_short: "%d. %b %Y"
+      decidim_with_day_and_month_name: "%A, %d. %b %Y"
+      decidim_with_month_name: "%d. %B %Y"
+      decidim_with_month_name_short: "%d. %b"
   decidim:
     account:
       data_portability_export:
@@ -364,7 +364,7 @@ de:
           email_already_exists: Ein anderes Konto verwendet dieselbe E-Mail-Adresse
         new:
           complete_profile: Profil vervollständingen
-          nickname_help: Ihre kurze, eindeutige ID in %{organization}
+          nickname_help: Your alias in %{organization}
           sign_up: Bitte vervollständigen Sie Ihr Profil
           subtitle: Bitte füllen Sie das folgende Formular aus, um die Anmeldung abzuschließen
           username_help: Öffentlich sichtbarer Name, der in Ihren Beiträgen angezeigt wird. Um Anonymität zu gewährleisten, kann es sich um einen beliebigen Namen handeln.
@@ -373,7 +373,7 @@ de:
           already_have_an_account?: Haben Sie bereits ein Konto?
           newsletter: Erhalten Sie einen gelegentlichen Newsletter mit relevanten Informationen
           newsletter_title: Kontakt Erlaubnis
-          nickname_help: Ihre kurze, eindeutige ID in %{organization}
+          nickname_help: Your alias in %{organization}
           password_help: "%{minimun_characters} characters minimum, must not be too common (e.g. 123456) and must be different from your nickname and your email."
           sign_in: Anmelden
           sign_up: Registrieren
@@ -388,7 +388,7 @@ de:
         new:
           are_you_new?: Neu auf der Plattform?
           register: Konto erstellen
-          sign_in_disabled: Nutze eines der folgenden externen Konten, um dich einzuloggen
+          sign_in_disabled: Sie können mit einem externen Konto darauf zugreifen
           sign_up_disabled: Die Anmeldung ist deaktiviert. Sie können einen vorhandenen Benutzer für den Zugriff verwenden
       shared:
         newsletter_modal:
@@ -858,13 +858,13 @@ de:
       home:
         extended:
           debates: Diskussionen
-          debates_explanation: Bring dich ein und teile deine Ansichten zum digitalen Wandel.
-          how_to_participate: Wie kann ich mich beteiligen?
-          meetings: Gespräche & Workshops
-          meetings_explanation: Finde heraus, wo und wann Veranstaltungen zum Thema Digitalisierung stattfinden.
+          debates_explanation: Teilen Sie Ihre Ansichten und bereichern Sie die aus Ihrer Sicht relevanten Themen.
+          how_to_participate: Wie nehme ich an einem Prozess teil?
+          meetings: Meetings
+          meetings_explanation: Finden Sie heraus, wo und wann Sie an öffentlichen Veranstaltungen teilnehmen können.
           more_info: Mehr Informationen
-          proposals: Ideen
-          proposals_explanation: Bereichere die Digitalisierungsstrategie mit den aus deiner Sicht relevanten Themen.
+          proposals: Vorschläge
+          proposals_explanation: Machen Sie Vorschläge, unterstützen Sie bestehende und fördern Sie die Änderungen, die Sie sehen möchten.
         footer_sub_hero:
           footer_sub_hero_body: Lasst uns eine offenere, transparentere und kollaborativere Gesellschaft aufbauen.<br /> Beitreten, teilnehmen und entscheiden.
           footer_sub_hero_headline: Willkommen auf der Beteiligungsplattform %{organization}.
@@ -1039,7 +1039,7 @@ de:
       share_modal:
         close_window: Fenster schließen
         share: Teilen
-        share_link: Einen Link teilen
+        share_link: Link teilen
       version_author:
         deleted: Gelöschter Benutzer
     user_activity:
@@ -1084,7 +1084,7 @@ de:
       edit:
         header: Beenden Sie die Erstellung Ihres Kontos
         nickname_help: Ihre eindeutige ID in %{organization}.
-        submit_button: sparen
+        submit_button: Speichern
         subtitle: Wenn Sie die Einladung annehmen, geben Sie bitte Ihren Benutzernamen und Ihr Passwort ein.
       invitation_removed: Ihre Einladung wurde entfernt.
       invitation_token_invalid: Das angegebene Einladungstoken ist nicht gültig!
@@ -1194,7 +1194,7 @@ de:
         didn_t_receive_unlock_instructions: Haben Sie keine Entsperrungsanweisungen erhalten?
         forgot_your_password: Haben Sie Ihr Passwort vergessen?
         sign_in: Einloggen
-        sign_in_with_provider: Stadtverwaltung Bühl
+        sign_in_with_provider: Mit %{provider} anmelden
         sign_up: Registrieren
       minimum_password_length:
         one: "(%{count} Zeichen Minimum)"
@@ -1241,7 +1241,7 @@ de:
       edit_link:
         edit: Bearbeiten
       footer:
-        download_open_data: Open-Data Dateien herunterladen
+        download_open_data: Open Data Dateien herunterladen
         made_with_open_source: Website mit <a target="_blank" href="https://github.com/decidim/decidim">freier Software erstellt</a>.
       header:
         close_menu: Menü schließen
@@ -1313,15 +1313,15 @@ de:
       day_of_week: "%a"
       day_of_week_long: "%a %e"
       day_of_year: "%d.%m.%y"
-      decidim_day_of_year: "%d %B %Y"
-      decidim_short: "%d/%m/%Y %H:%M"
-      default: "%a, %d %b %Y %H:%M:%S %z"
+      decidim_day_of_year: "%d. %B %Y"
+      decidim_short: "%d.%m.%Y %H:%M"
+      default: "%a, %d. %b %Y %H:%M:%S %z"
       devise:
         mailer:
           invitation_instructions:
             accept_until_format: "%B %d, %Y %I:%M %p"
       long: "%B %d, %Y %H:%M"
-      short: "%d/%m/%Y %H:%M"
+      short: "%d.%m.%Y %H:%M"
       time_of_day: "%H:%M"
   versions:
     directions:

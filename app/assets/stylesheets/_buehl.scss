@@ -95,6 +95,10 @@ a:hover .author__name{
    background-color: $blue;
 }
 
+.button-group.small .button {
+   font-size: 0.8rem;
+}
+
 .floating-helper__content,
 .floating-helper__text{
    border-top-color: $blue;

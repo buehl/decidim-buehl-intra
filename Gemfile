@@ -23,7 +23,7 @@ gem "origami"
 gem "figaro"
 
 # Secure decidim with a password until all requirements are met
-gem "lockup"
+# gem "lockup"
 
 gem "rails_admin"
 gem "rails_admin-i18n"

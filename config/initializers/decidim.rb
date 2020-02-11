@@ -4,6 +4,8 @@ Decidim.configure do |config|
   config.application_name = "mein.buehl.intra"
   config.mailer_sender = "decidim@buehl.intra"
 
+  config.maximum_attachment_size = 150.megabytes
+
   # Change these lines to set your preferred locales
   config.default_locale = :de
   config.available_locales = [:de, :en, :fr]
