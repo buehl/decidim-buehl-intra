@@ -13,6 +13,7 @@ if Rails.application.secrets.dig(:omniauth, :ldap, :enabled)
       :method => Rails.application.secrets.dig(:omniauth, :ldap, :method),
       :bind_dn => Rails.application.secrets.dig(:omniauth, :ldap, :bind_dn),
       :password => Rails.application.secrets.dig(:omniauth, :ldap, :password),
+      :tls_options => { verify_mode: OpenSSL::SSL::VERIFY_NONE },
       scope: :public
   end
 
